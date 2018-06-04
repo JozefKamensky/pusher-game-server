@@ -16,6 +16,10 @@ public class PossibleAction {
         this.votes++;
     }
 
+    synchronized public void voteDown() {
+        this.votes--;
+    }
+
     public int getId() {
         return id;
     }
